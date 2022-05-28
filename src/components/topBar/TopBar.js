@@ -14,15 +14,15 @@ export const TopBar = () => {
                 </section>
                 <section className={ style.topRight }>
                     <div className={ style.icons_Wrapper }>
-                        <NotificationsNoneIcon  fontSize='large'/>
+                        <NotificationsNoneIcon  className={ style.icon }/>
                         <span className={ style.iconBag}>2</span>
                     </div>
                     <div className={ style.icons_Wrapper }>
-                        <LanguageIcon fontSize='large' />
+                        <LanguageIcon className={ style.icon } />
                         <span className={ style.iconBag}>2</span>
                     </div>
                     <div className={ style.icons_Wrapper }>
-                        <SettingsIcon fontSize='large' />
+                        <SettingsIcon className={ style.icon } />
                     </div>
                     <img className={ style.topAvatar} src="https://media.istockphoto.com/photos/woman-wearing-vr-glasses-s-picture-id1351141161?b=1&k=20&m=1351141161&s=612x612&w=0&h=OtUJG9i3wmeufIAuTTjISAz7AQVRB3bCOQyp12gNNuw=" alt="top-avatar" />
                 </section>

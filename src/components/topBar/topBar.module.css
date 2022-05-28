@@ -34,9 +34,8 @@
     color: #555;
 }
 
-.icon svg {
-    font-size: 3rem;
-    background-color: red;
+.icon  {
+    font-size: 3rem !important;
 }
 
 .iconBag {
