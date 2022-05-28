@@ -1,6 +1,8 @@
 //componnets
 import { Chart } from '../components/chart/Chart'
 import { FeaturedInfo } from '../components/featuredInfo/FeaturedInfo'
+import { WidgetSm } from '../components/widgetSm/WidgetSm'
+import { WidgetLg } from '../components/widgetLg/WidgetLg'
 //styles
 import style from './home.module.css'
 //dummy data
@@ -17,6 +19,10 @@ export const Home = () => {
                 dataKey="Active User"
                 grid
             />
+            <section className={ style.widgets }>
+                <WidgetSm />
+                <WidgetLg />
+            </section>
         </main>
     )
 }
