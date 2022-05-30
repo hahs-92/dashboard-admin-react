@@ -13,6 +13,7 @@ import {
   WorkOutline,
   Report,
 } from '@mui/icons-material'
+import { Link, NavLink } from 'react-router-dom'
 //styles
 import style from './sideBar.module.css'
 
@@ -24,10 +25,12 @@ export const SideBar = () => {
                 <menu className={ style.Menu }>
                     <h3 className={ style.title}>Dashboard</h3>
                     <ul className={ style.list }>
-                        <li className={ `${style.listItem} ${style.active}` }>
-                            <LineStyle className={ style.icon } />
-                            <span>Home</span>
-                        </li>
+                        <NavLink className={({isActive}) => isActive ? style.activeListItem : ""} to="/" >
+                            <li className={ style.listItem }>
+                                <LineStyle className={ style.icon } />
+                                <span>Home</span>
+                            </li>
+                        </NavLink>
                         <li className={ style.listItem }>
                             <Timeline className={ style.icon } />
                             <span>Analytics</span>
@@ -41,14 +44,18 @@ export const SideBar = () => {
                 <menu className={ style.Menu }>
                     <h3 className={ style.title}>Quick menu</h3>
                     <ul className={ style.list }>
-                        <li className={ `${style.listItem} ${style.active}` }>
-                            <PermIdentity className={ style.icon } />
-                            <span>Users</span>
-                        </li>
-                        <li className={ style.listItem }>
-                            <Storefront className={ style.icon } />
-                            <span>Products</span>
-                        </li>
+                        <NavLink className={({isActive}) => isActive ? style.activeListItem : ""} to="/users" >
+                            <li className={ style.listItem }>
+                                <PermIdentity className={ style.icon } />
+                                <span>Users</span>
+                            </li>
+                        </NavLink>
+                        <Link to="/products" >
+                            <li className={ style.listItem }>
+                                <Storefront className={ style.icon } />
+                                <span>Products</span>
+                            </li>
+                        </Link>
                         <li className={ style.listItem }>
                             <AttachMoney className={ style.icon } />
                             <span>Transactions</span>
@@ -62,7 +69,7 @@ export const SideBar = () => {
                 <menu className={ style.Menu }>
                     <h3 className={ style.title}>Notifications</h3>
                     <ul className={ style.list }>
-                        <li className={ `${style.listItem} ${style.active}` }>
+                        <li className={ `${style.listItem}` }>
                             <MailOutline className={ style.icon } />
                             <span>Mail</span>
                         </li>
@@ -79,7 +86,7 @@ export const SideBar = () => {
                 <menu className={ style.Menu }>
                     <h3 className={ style.title}>Staff</h3>
                     <ul className={ style.list }>
-                        <li className={ `${style.listItem} ${style.active}` }>
+                        <li className={ `${style.listItem} ` }>
                             <WorkOutline className={ style.icon } />
                             <span>Manage</span>
                         </li>

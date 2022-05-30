@@ -8,6 +8,7 @@ import {
 import { Home } from '../pages/home/Home';
 import { UserList } from '../pages/userList/UserList';
 import { User } from '../pages/user/User';
+import { NewUser } from '../pages/newUser/NewUser';
 //components
 import { TopBar } from '../components/topBar/TopBar'
 import { SideBar } from '../components/sideBar/SideBar';
@@ -25,6 +26,7 @@ function App() {
               <Route path='/' element={ <Home />} />
               <Route path='/users' element={ <UserList /> } />
               <Route path='/user/:userId' element={ <User /> } />
+              <Route path='/newUser' element={ <NewUser /> } />
           </Routes>
         </div>
     </BrowserRouter>
