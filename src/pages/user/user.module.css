@@ -1,0 +1,165 @@
+.user {
+    flex: 4;
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2.4rem;
+}
+
+.addButton {
+    padding: .5rem;
+    width: 8rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.show {
+    flex: 1;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.update {
+    flex: 2;
+    margin-left: 1rem;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.showTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showTopImage {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.showTopTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.showTopUsername {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.showTopUserRole {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.showBotton {
+    margin-top: 2rem;
+}
+
+.showBottomTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(175, 170, 170);
+}
+
+.showBottomInfo {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    color: #444;
+}
+
+.icon {
+    font-size: 1.6rem !important;
+}
+
+.showBottomInfoTilte {
+    margin-left: 1rem;
+}
+
+.showBottomInfoTilte {
+    font-size: 1.4rem;
+}
+
+.updateTitle {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.updateItem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.updateItem label {
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+}
+
+.updateInput {
+    border: none;
+    width: 25rem;
+    height: 4rem;
+    border-bottom: 1px solid gray;
+}
+
+.updateForm {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.updateRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.updateUpload  {
+    display: flex;
+    align-items: center;
+}
+
+.updateImage {
+    margin-right: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.icon.upload {
+    cursor: pointer;
+}
+
+.updateButton {
+    padding: .5rem;
+    height: 4rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
