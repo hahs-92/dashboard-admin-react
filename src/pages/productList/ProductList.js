@@ -3,12 +3,12 @@ import { DeleteOutline } from '@mui/icons-material';
 import { DataGrid } from '@mui/x-data-grid';
 import { Link } from 'react-router-dom';
 //styles
-import style from './userList.module.css'
-// dummy data
-import { userRows } from '../../dummyData'
+import style from './productList.module.css'
+//dummy data
+import { productRows} from '../../dummyData';
 
-export const UserList = () => {
-    const [data, setData ] = useState(userRows)
+export const ProductList = () => {
+    const [data, setData ] = useState(productRows)
 
     const onDelete = (id) => {
         setData(data.filter(item => item.id !== id))
@@ -17,25 +17,25 @@ export const UserList = () => {
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
         // { field: 'username', headerName: 'Username', width: 130 },
-            { field: 'user', headerName: 'Username', width: 250, renderCell: (params) => {
+            { field: 'product', headerName: 'Product', width: 250, renderCell: (params) => {
                 return (
-                    <div className={ style.userImage }>
-                        <img src={ params.row.avatar } alt={ params.row.username } />
-                        <span>{params.row.username}</span>
+                    <div className={ style.productImage }>
+                        <img src={ params.row.img } alt={ params.row.name } />
+                        <span>{params.row.name}</span>
                     </div>
                 )
             }
         },
-        { field: 'email', headerName: 'Email', width: 250 },
+        { field: 'stock', headerName: 'Stock', width: 250 },
         { field: 'status', headerName: 'Status', width: 120,},
-        { field: 'transaction', headerName: 'Transaction', width: 150,},
+        { field: 'price', headerName: 'Price', width: 150,},
         {
             field: "action",
             headerName: "Action",
             width: 120,
             renderCell: (params) => (
                 <>
-                    <Link to={ `/user/${ params.row.id}` }>
+                    <Link to={ `/product/${ params.row.id}` }>
                         <button className={ style.edit }>Edit</button>
                     </Link >
                     <DeleteOutline
@@ -47,9 +47,10 @@ export const UserList = () => {
         }
     ];
 
+
     return (
-        <main className={ style.userList }>
-            <DataGrid
+        <main className={ style.products }>
+             <DataGrid
                 className={ style.table }
                 rows={ data }
                 columns={columns}

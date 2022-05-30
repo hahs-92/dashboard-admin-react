@@ -13,7 +13,7 @@ import {
   WorkOutline,
   Report,
 } from '@mui/icons-material'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 //styles
 import style from './sideBar.module.css'
 
@@ -50,12 +50,12 @@ export const SideBar = () => {
                                 <span>Users</span>
                             </li>
                         </NavLink>
-                        <Link to="/products" >
+                        <NavLink className={({isActive}) => isActive ? style.activeListItem : ""}  to="/products" >
                             <li className={ style.listItem }>
                                 <Storefront className={ style.icon } />
                                 <span>Products</span>
                             </li>
-                        </Link>
+                        </NavLink>
                         <li className={ style.listItem }>
                             <AttachMoney className={ style.icon } />
                             <span>Transactions</span>

@@ -1,0 +1,40 @@
+.products {
+    flex: 4;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem !important;
+}
+
+.productImage {
+    display: flex;
+    align-items: center;
+}
+
+.productImage img {
+    margin-right: 1rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit {
+    margin-right: 1rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+}
+
+.delete {
+    font-size: 2.2rem !important;
+    color: red;
+    cursor: pointer;
+}
